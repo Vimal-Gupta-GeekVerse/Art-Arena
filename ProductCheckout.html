@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="image/FeviconLogo.svg">
+  <title>ArtGallery</title>
+  <script src="https://kit.fontawesome.com/52ca9e0df4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@5.2.0/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/easyzoom@2.5.2/css/easyzoom.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rsponsive.css">
+</head>
+
+<body>
+  <!-- header section start  -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="image/ArtArena.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Gallery
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Full-Width Grid Gallery</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                What's On
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="productPage.html">Products</a></li>
+                <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+                <li><a class="dropdown-item" href="#">Exibitions</a></li>
+                <li><a class="dropdown-item" href="#">Events & Programs</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle " data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about.html">History</a></li>
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    href="#">Artists</a>
+                  <ul class="dropdown-menu shadow">
+                    <li><a class="dropdown-item" href="#">Maria Zvonareva</a></li>
+                    <li><a class="dropdown-item" href="#">Dinh Nguyen</a></li>
+                    <li><a class="dropdown-item" href="#">Melinda Stoker</a></li>
+                    <li><a class="dropdown-item" href="#">Wade Wilsone</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Meet Our Staff</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Journal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+
+
+          <div class="serch_cart d-none d-lg-flex">
+
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="fa-regular fa-user">
+              <div class="hoverLoginPage">
+                <div class="innerheader fourthH">
+                  <span>Sign In</span>
+                  <a href="#">Create an Account</a>
+                </div>
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-12">
+                    <label for="validationCustomUsername" class="form-label">Username or Email</label>
+                    <div class="input-group has-validation">
+
+                      <input type="email" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" placeholder="Username" required>
+                      <div class="invalid-feedback">
+                        Please choose a username.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="validationCustomPassword" class="form-label">Password</label>
+                    <div class="input-group has-validation">
+
+                      <input type="password" class="form-control" id="validationCustomPassword"
+                        aria-describedby="enterPassword" placeholder="Password" required>
+                      <div class="invalid-feedback">
+                        Enter correct Password.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button class="btn text-uppercase" type="submit">Login</button>
+                  </div>
+                  <a class="lastLink" href="#">Lost Your Password ?</a>
+                </form>
+              </div>
+            </i>
+            <i class="fa-regular fa-heart"><sup>0</sup></i>
+            <i class="fa-brands fa-opencart"><sup>0</sup></i>
+          </div>
+
+
+        </div>
+        <div class="miniBottumNav d-flex d-lg-none">
+          <ul class="miniBottumNav-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#"> <i class="fa-regular fa-user"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <ul class="dropdown-menu">
+
+                <li>
+                  <form class="dropdown-item d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search...">
+                    <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#"><i class="fa-brands fa-opencart"><sup>0</sup></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header section end  -->
+
+  <!-- ProductCheckout Banner Section Start -->
+  <section class="AboutBanner ProductCheckOutBanner">
+    <img src="image/AboutBanner.jpg" alt="AboutBanner">
+    <div class="container-fluid text-center">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="productPage.html">Products</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Product Checkout </li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+  <!-- ProductCheckout Banner Section End -->
+
+
+  <section class="ProductCheckout defaultPadding">
+    <div class="container-fluid PaddingContainer">
+      <div class="row justify-content-between">
+        <div class="product__carousel col-auto">
+
+          <!-- Swiper and EasyZoom plugins start -->
+          <div class="swiper-container gallery-top">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide easyzoom easyzoom--overlay">
+                <a
+                  href="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-1.jpg?raw=true">
+                  <img
+                    src="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-1.jpg?raw=true"
+                    alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide easyzoom easyzoom--overlay">
+                <a
+                  href="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-2.jpg?raw=true">
+                  <img
+                    src="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-2.jpg?raw=true"
+                    alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide easyzoom easyzoom--overlay">
+                <a
+                  href="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-3.jpg?raw=true">
+                  <img
+                    src="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-3.jpg?raw=true"
+                    alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide easyzoom easyzoom--overlay">
+                <a
+                  href="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-4.jpg?raw=true">
+                  <img
+                    src="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-4.jpg?raw=true"
+                    alt="" />
+                </a>
+              </div>
+              <div class="swiper-slide easyzoom easyzoom--overlay">
+                <a
+                  href="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-5.jpeg?raw=true">
+                  <img
+                    src="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-5.jpeg?raw=true"
+                    alt="" />
+                </a>
+              </div>
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-1.jpg?raw=true"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-2.jpg?raw=true"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-3.jpg?raw=true"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-4.jpg?raw=true"
+                  alt="">
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="https://github.com/shoha-kh/products-gallery-carousel-with-zoom/blob/master/images/nature-5.jpeg?raw=true"
+                  alt="">
+              </div>
+            </div>
+          </div>
+          <!-- Swiper and EasyZoom plugins end -->
+        </div>
+        <div class="col-xl-6 col-lg-7 col-md-10">
+          <h2 class="secH">Knitted Cushion</h2>
+          <strong class="therdH">$286.99</strong>
+          <p>Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the
+            unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.</p>
+
+          <form class="cart" action="#" method="post">
+            <label class="quantity_label">Quantity: </label>
+            <div class="quantity buttons_added"><span class="minus quantity-action">-</span>
+              <input type="number" id="quantity_661990f09e370" class="input-text qty text" step="1" min="1" max=""
+                name="quantity" value="1" title="Qty" size="4" placeholder="" inputmode="numeric"><span
+                class="plus quantity-action">+</span>
+            </div>
+            <button type="submit" name="add-to-cart" value="2856" class="MyBtn"><i
+                class="fa-solid fa-cart-arrow-down"></i> Add to cart</button>
+          </form>
+          <a class="wishlist" href="#"><i class="fa-regular fa-heart"></i> Add to wishlist</a>
+          <div class="ListType">
+            <span class="labelTag">Category:</span> <a href="#">Product Masonry</a>
+          </div>
+          <div class="ListType">
+            <span class="labelTag">Share:</span>
+            <a class=" fa-brands fa-facebook-f"></a>
+            <a class=" fa-brands fa-twitter"></a>
+            <a class=" fa-brands fa-youtube"></a>
+            <a class=" fa-brands fa-instagram"></a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="accordion accordion-flush" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button fourthH" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Description
+            </button>
+          </h2>
+
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button fourthH collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Reviews (0)
+            </button>
+          </h2>
+
+        </div>
+
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the
+            unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the road.
+            Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the
+            bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a
+            well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate and
+            pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the
+            guitar-influenced leather strap enables easy and stylish travel.
+          </div>
+        </div>
+
+
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+          data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+            plugin adds the appropriate classes that we use to style each element. These classes control the overall
+            appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom
+            CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the
+            <code>.accordion-body</code>, though the transition does limit overflow.
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <section class="RelatedProducts defaultPadding">
+    <div class="container-fluid PaddingContainer">
+<h2 class="secH">Related products</h2>
+<div class="OurProducts">
+  <div class="row justify-content-between">
+   
+    <div class="col-md-4 col-sm-6">
+      <div class="imgWrap">
+        <a class="imageAncher" href="#">
+          <img src="image/paintings (1).jpg" alt="painting">
+        </a>
+        <div class="iconsColumn">
+          <a href="#"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-solid fa-shuffle" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-regular fa-eye" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-brands fa-opencart" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="p-3 text-center">
+        <h2 class="therdH">Painting</h2>
+        <strong>$106.99</strong>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="imgWrap">
+        <a class="imageAncher" href="#">
+          <img src="image/paintings (2).jpg" alt="painting">
+        </a>
+        <div class="iconsColumn">
+          <a href="#"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-solid fa-shuffle" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-regular fa-eye" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-brands fa-opencart" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="p-3 text-center">
+        <h2 class="therdH">Painting</h2>
+        <strong>$106.99</strong>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="imgWrap">
+        <a class="imageAncher" href="#">
+          <img src="image/paintings (3).jpg" alt="painting">
+        </a>
+        <div class="iconsColumn">
+          <a href="#"><i class="fa-regular fa-heart" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-solid fa-shuffle" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-regular fa-eye" aria-hidden="true"></i></a>
+          <a href="#"><i class="fa-brands fa-opencart" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div class="p-3 text-center">
+        <h2 class="therdH">Painting</h2>
+        <strong>$106.99</strong>
+      </div>
+    </div>
+    
+  
+  </div>      
+</div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- footer start -->
+  <footer class="defaultPadding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto">
+          <a class="navbar-brand" href="index.html"><img src="image/ArtArena.svg" alt="logo"></a>
+        </div>
+        <div class="col">
+          <div class="footer-Links">
+            <a href="about.html">our story</a>
+            <a href="#">Sign Up</a>
+            <a href="#">Stores</a>
+            <a href="#">Customer care</a>
+            <a href="#">Careers</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3 copyright align-items-center">
+        <div class="col-md-5 d-flex flex-wrap align-items-center mb-3 mb-md-0">
+          <p class="m-0">© <a href="#"><strong>ArtArena</strong> </a>2019. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-7">
+          <a class="socialFooter fa-brands fa-facebook-f"></a>
+          <a class="socialFooter fa-brands fa-twitter"></a>
+          <a class="socialFooter fa-brands fa-youtube"></a>
+          <a class="socialFooter fa-brands fa-instagram"></a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@5.2.0/js/swiper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/easyzoom@2.5.2/dist/easyzoom.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    // product Gallery and Zoom
+
+    // activation carousel plugin
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+      spaceBetween: 5,
+      freeMode: true,
+      watchSlidesVisibility: true,
+      watchSlidesProgress: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 3,
+        },
+        992: {
+          slidesPerView: 4,
+        },
+      }
+    });
+    var galleryTop = new Swiper('.gallery-top', {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      thumbs: {
+        swiper: galleryThumbs
+      },
+    });
+    // change carousel item height
+    // gallery-top
+    let productCarouselTopWidth = $('.gallery-top').outerWidth();
+    $('.gallery-top').css('height', productCarouselTopWidth);
+
+    // gallery-thumbs
+    let productCarouselThumbsItemWith = $('.gallery-thumbs .swiper-slide').outerWidth();
+    $('.gallery-thumbs').css('height', productCarouselThumbsItemWith);
+
+    // activation zoom plugin
+    var $easyzoom = $('.easyzoom').easyZoom();
+  </script>
+
+</body>
+
+</html>

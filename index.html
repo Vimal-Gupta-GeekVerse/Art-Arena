@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="image/FeviconLogo.svg">
+  <title>ArtGallery</title>
+  <script src="https://kit.fontawesome.com/52ca9e0df4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rsponsive.css">
+</head>
+
+<body>
+  <!-- header section start  -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="image/ArtArena.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Gallery
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Full-Width Grid Gallery</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                What's On
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="productPage.html">Products</a></li>
+                <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+                <li><a class="dropdown-item" href="#">Exibitions</a></li>
+                <li><a class="dropdown-item" href="#">Events & Programs</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about.html">History</a></li>
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    href="#">Artists</a>
+                  <ul class="dropdown-menu shadow">
+                    <li><a class="dropdown-item" href="#">Maria Zvonareva</a></li>
+                    <li><a class="dropdown-item" href="#">Dinh Nguyen</a></li>
+                    <li><a class="dropdown-item" href="#">Melinda Stoker</a></li>
+                    <li><a class="dropdown-item" href="#">Wade Wilsone</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Meet Our Staff</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Journal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+
+          <div class="serch_cart d-none d-lg-flex">
+
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="fa-regular fa-user">
+              <div class="hoverLoginPage">
+                <div class="innerheader fourthH">
+                  <span>Sign In</span>
+                  <a href="#">Create an Account</a>
+                </div>
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-12">
+                    <label for="validationCustomUsername" class="form-label">Username or Email</label>
+                    <div class="input-group has-validation">
+
+                      <input type="email" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" placeholder="Username" required>
+                      <div class="invalid-feedback">
+                        Please choose a username.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="validationCustomPassword" class="form-label">Password</label>
+                    <div class="input-group has-validation">
+
+                      <input type="password" class="form-control" id="validationCustomPassword"
+                        aria-describedby="enterPassword" placeholder="Password" required>
+                      <div class="invalid-feedback">
+                        Enter correct Password.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button class="btn text-uppercase" type="submit">Login</button>
+                  </div>
+                  <a class="lastLink" href="#">Lost Your Password ?</a>
+                </form>
+              </div>
+            </i>
+            <i class="fa-regular fa-heart"><sup>0</sup></i>
+            <i class="fa-brands fa-opencart"><sup>0</sup></i>
+          </div>
+
+
+        </div>
+        <div class="miniBottumNav d-flex d-lg-none">
+          <ul class="miniBottumNav-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#"> <i class="fa-regular fa-user"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <ul class="dropdown-menu">
+
+                <li>
+                  <form class="dropdown-item d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search...">
+                    <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#"><i class="fa-brands fa-opencart"><sup>0</sup></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header section end  -->
+
+  <!-- banner section Start -->
+  <section class="banner">
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1">
+          <span>Aug 2024</span>
+          <h2 class="fourthH">Les Fleurs Du Mal</h2>
+        </button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="1" aria-label="Slide 2">
+          <span>Aug 2024</span>
+          <h2 class="fourthH">Pastel Portraits</h2>
+        </button>
+        <button type="button" data-bs-target="#carouselExampleFade" data-bs-slide-to="2" aria-label="Slide 3">
+          <span>Aug 2024</span>
+          <h2 class="fourthH">Peasant Scenes</h2>
+        </button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <div class="row">
+            <div class="col-lg-6 textPart">
+              <span style="animation-delay: 0s;">1 Aug 2024</span>
+              <h1 style="animation-delay: 0.2s;" class="display-5">Les Fleurs Du Mal - The French Masters</h1>
+              <p style="animation-delay: 0.4s;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eos
+                quo tempore culpa. Dolorum, quidem a vitae et error repellendus veritatis dicta delectus, distinctio
+                ipsam quos tenetur quisquam facilis tempora!</p>
+              <a style="animation-delay: 0.6s;" class="MyOutlineBtn" href="#">Shop Now <i
+                  class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="col-lg-6">
+              <img src="image/BannerImage1.jpg" alt="Les Fleurs Du Mal">
+            </div>
+          </div>
+
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6 textPart">
+              <span style="animation-delay: 0s;">7 Aug 2024</span>
+              <h1 style="animation-delay: 0.2s;" class="display-5">Nineteenth-Century Pastel Portraits</h1>
+              <p style="animation-delay: 0.4s;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eos
+                quo tempore culpa. Dolorum, quidem a vitae et error repellendus veritatis dicta delectus, distinctio
+                ipsam quos tenetur quisquam facilis tempora!</p>
+              <a style="animation-delay: 0.6s;" class="MyOutlineBtn" href="#">Shop Now <i
+                  class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="col-lg-6">
+              <img src="image/BannerImage2.jpg" alt="Nineteenth-Century Pastel Portraits">
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-lg-6 textPart">
+              <span style="animation-delay: 0s;">18 Aug 2024</span>
+              <h1 style="animation-delay: 0.2s;" class="display-5">Peasant Scenes And Landscapes</h1>
+              <p style="animation-delay: 0.4s;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo eos
+                quo tempore culpa. Dolorum, quidem a vitae et error repellendus veritatis dicta delectus, distinctio
+                ipsam quos tenetur quisquam facilis tempora!</p>
+              <a style="animation-delay: 0.6s;" class="MyOutlineBtn" href="#">Shop Now <i
+                  class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+            <div class="col-lg-6">
+              <img src="image/BannerImage3.jpg" alt="Peasant Scenes And Landscapes">
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- banner section end -->
+
+  <!-- history of artArena section Start-->
+  <section class="historyOfArtArena defaultPadding">
+    <div class="container-fluid text-center">
+      <h2 class="secH">History Of ArtArena</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit culpa vitae necessitatibus sed aliquam, quisquam
+        voluptatibus tenetur harum perferendis optio, dolores reiciendis fugit consequatur. At natus voluptates
+        consectetur officia deserunt mollitia enim ut cumque in. Molestias mollitia sint quasi commodi.</p>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-2 px-lg-5 px-md-2 ">
+        <a href="#"><img src="image/menufacture-1.jpg" alt="menufacture">
+        </a>
+      </div>
+      <div class="col-2 px-lg-5 px-md-2 ">
+        <a href="#"> <img src="image/menufacture-2.jpg" alt="menufacture"></a>
+      </div>
+      <div class="col-2 px-lg-5 px-md-2 ">
+        <a href="#"><img src="image/menufacture-3.jpg" alt="menufacture">
+        </a>
+      </div>
+      <div class="col-2 px-lg-5 px-md-2 ">
+        <a href="#"> <img src="image/menufacture-4.jpg" alt="menufacture"></a>
+      </div>
+    </div>
+  </section>
+  <!-- history of artArena section End-->
+
+  <!-- tiles section Start -->
+  <section class="TilesSection">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6">
+          <a href="#">
+            <div class="zoomwrapper">
+              <img src="image/paintings (1).jpg" alt="paintings">
+              <div class="circleWithPrice">
+                <h2 class="therdH">Bird</h2>
+                <strong>Price: $23</strong>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-sm-6">
+              <a href="#">
+                <div class="zoomwrapper">
+                  <img src="image/paintings (2).jpg" alt="paintings">
+                  <div class="bottumleftTag">
+                    <h2 class="therdH">Women Painting</h2>
+                    <strong>Price: $30</strong>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-sm-6">
+              <a href="#">
+                <div class="zoomwrapper">
+                  <img src="image/paintings (3).jpg" alt="paintings">
+                  <div class="bottumleftTag">
+                    <h2 class="therdH">Buddha</h2>
+                    <strong>Price: $35</strong>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12">
+
+              <a href="#">
+                <div class="zoomwrapper">
+                  <img src="image/paintings (4).png" alt="paintings">
+                  <div class="bottumleftTag">
+                    <h2 class="therdH">Women Wall Painting</h2>
+                    <strong>Price: $50</strong>
+                  </div>
+                </div>
+              </a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- tiles section End -->
+
+  <!-- Our Products section Start -->
+  <section class="OurProducts defaultPadding">
+    <div class="container-fluid">
+      <span class="therdH">Our Products</span>
+      <h2 class="secH text-center">Sustainable, Accessible
+        and Compatible</h2>
+      <div class="row justify-content-between">
+        <div class="col-lg-2 col-md-6">
+          <div class="imgWrap">
+            <a class="imageAncher" href="ProductCheckout.html">
+              <img src="image/paintings (1).jpg" alt="painting">
+            </a>
+            <div class="iconsColumn">
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-brands fa-opencart"></i></a>
+            </div>
+          </div>
+
+          <div class="p-3 text-center">
+            <h2 class="therdH">Painting</h2>
+            <strong>$106.99</strong>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <div class="imgWrap">
+            <a class="imageAncher" href="ProductCheckout.html">
+              <img src="image/paintings (2).jpg" alt="painting">
+            </a>
+            <div class="iconsColumn">
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-brands fa-opencart"></i></a>
+            </div>
+          </div>
+
+          <div class="p-3 text-center">
+            <h2 class="therdH">Painting</h2>
+            <strong>$106.99</strong>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="imgWrap">
+            <a class="imageAncher" href="ProductCheckout.html">
+              <img src="image/paintings (3).jpg" alt="painting">
+            </a>
+            <div class="iconsColumn">
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-brands fa-opencart"></i></a>
+            </div>
+          </div>
+
+          <div class="p-3 text-center">
+            <h2 class="therdH">Painting</h2>
+            <strong>$106.99</strong>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="imgWrap">
+            <a class="imageAncher" href="ProductCheckout.html">
+              <img src="image/BannerImage1.jpg" alt="painting">
+            </a>
+            <div class="iconsColumn">
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-brands fa-opencart"></i></a>
+            </div>
+          </div>
+
+          <div class="p-3 text-center">
+            <h2 class="therdH">Painting</h2>
+            <strong>$106.99</strong>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <div class="imgWrap">
+            <a class="imageAncher" href="ProductCheckout.html">
+              <img src="image/BannerImage2.jpg" alt="painting">
+            </a>
+            <div class="iconsColumn">
+              <a href="#"><i class="fa-regular fa-heart"></i></a>
+              <a href="#"><i class="fa-solid fa-shuffle"></i></a>
+              <a href="#"><i class="fa-regular fa-eye"></i></a>
+              <a href="#"><i class="fa-brands fa-opencart"></i></a>
+            </div>
+          </div>
+
+          <div class="p-3 text-center">
+            <h2 class="therdH">Painting</h2>
+            <strong>$106.99</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our Products section End -->
+
+  <!-- new Master Product section start -->
+  <section class="newMasterProduct">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-7">
+          <img src="image/MasterPies.png" alt="MasterPies">
+        </div>
+        <div class="col-md-5 px-md-5">
+          <h2 class="secH">Chagall, Master Drawings </h2>
+          <p>FEBRUARY 27–MAY 28, 2018
+            On view at The Met First Avenue in Gallery 209
+            Accompanied by a catalogue and an Audio Guide </p>
+          <a class="MyOutlineBtn" href="#">Shop Now <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- new Master Product section end -->
+
+  <!-- Express Delivery Section Start -->
+  <section class="ExpressDelivery ">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-lg-3 col-md-6 text-center">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h2 class="therdH">Express Delivery</h2>
+          <p>Free shipping around the world for all orders over $120</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center">
+          <i class="fa-solid fa-shield"></i>
+          <h2 class="therdH">Safe Payment</h2>
+          <p>With our payment gateway, don’t worry about your information</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center">
+          <i class="fa-solid fa-box"></i>
+          <h2 class="therdH">Premium Packaging</h2>
+          <p>All pieces come carefully packed complete with packaging</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center">
+          <i class="fa-solid fa-id-card"></i>
+          <h2 class="therdH">Friendly Services</h2>
+          <p>You have 30-day return guarantee for every single ordervff</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Express Delivery Section End -->
+
+  <!-- Subscribe section start -->
+  <section class="Subscribe defaultPadding text-center">
+    <div class="container-fluid">
+    <h2 class="secH">Subscribe to our Newsletter</h2>
+    <p>Subscribe to the free newsletter and receive notification of new products and promotions!</p>
+    <form action="#">
+      <div class="form-fields">
+        <input type="email" name="EMAIL" placeholder="Enter your e-mail..." required="">
+        <button class="fourthH" type="submit" value="Submit">
+          Subscribe
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+      </div>
+    </form>
+    </div>
+  </section>
+  <!-- Subscribe section End -->
+
+  <!-- footer start -->
+<footer class="defaultPadding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-auto">
+        <a class="navbar-brand" href="index.html"><img src="image/ArtArena.svg" alt="logo"></a>
+      </div>
+      <div class="col">
+        <div class="footer-Links">
+          <a href="about.html">our story</a>
+          <a href="#">Sign Up</a>
+          <a href="#">Stores</a>
+          <a href="#">Customer care</a>
+          <a href="#">Careers</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="row pt-3 copyright align-items-center">
+      <div class="col-md-5 d-flex flex-wrap align-items-center mb-3 mb-md-0">
+        <p class="m-0">© <a href="#"><strong>ArtArena</strong> </a>2019. All Rights Reserved.</p>
+      </div>
+      <div class="col-md-7">
+        <a class="socialFooter fa-brands fa-facebook-f"></a>
+        <a class="socialFooter fa-brands fa-twitter"></a>
+        <a class="socialFooter fa-brands fa-youtube"></a>
+        <a class="socialFooter fa-brands fa-instagram"></a>
+      </div>
+     
+    </div>
+  </div>
+</footer>
+  <!-- footer end -->
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

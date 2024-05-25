@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="image/FeviconLogo.svg">
+  <title>ArtGallery</title>
+  <script src="https://kit.fontawesome.com/52ca9e0df4.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/rsponsive.css">
+</head>
+
+<body>
+  <!-- header section start  -->
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="image/ArtArena.svg" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Gallery
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                <li><a class="dropdown-item" href="#">Full-Width Grid Gallery</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                What's On
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="productPage.html">Products</a></li>
+                <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+                <li><a class="dropdown-item" href="#">Exibitions</a></li>
+                <li><a class="dropdown-item" href="#">Events & Programs</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" data-bs-auto-close="outside" href="#">
+                About Us
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="about.html">History</a></li>
+                <li class="dropend">
+                  <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                    href="#">Artists</a>
+                  <ul class="dropdown-menu shadow">
+                    <li><a class="dropdown-item" href="#">Maria Zvonareva</a></li>
+                    <li><a class="dropdown-item" href="#">Dinh Nguyen</a></li>
+                    <li><a class="dropdown-item" href="#">Melinda Stoker</a></li>
+                    <li><a class="dropdown-item" href="#">Wade Wilsone</a></li>
+                  </ul>
+                </li>
+                <li><a class="dropdown-item" href="#">Meet Our Staff</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Journal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <!-- <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+
+          <div class="serch_cart d-none d-lg-flex">
+
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+              data-bs-whatever="@mdo"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <i class="fa-regular fa-user">
+              <div class="hoverLoginPage">
+                <div class="innerheader fourthH">
+                  <span>Sign In</span>
+                  <a href="#">Create an Account</a>
+                </div>
+                <form class="row g-3 needs-validation" novalidate>
+                  <div class="col-12">
+                    <label for="validationCustomUsername" class="form-label">Username or Email</label>
+                    <div class="input-group has-validation">
+
+                      <input type="email" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" placeholder="Username" required>
+                      <div class="invalid-feedback">
+                        Please choose a username.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <label for="validationCustomPassword" class="form-label">Password</label>
+                    <div class="input-group has-validation">
+
+                      <input type="password" class="form-control" id="validationCustomPassword"
+                        aria-describedby="enterPassword" placeholder="Password" required>
+                      <div class="invalid-feedback">
+                        Enter correct Password.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <button class="btn text-uppercase" type="submit">Login</button>
+                  </div>
+                  <a class="lastLink" href="#">Lost Your Password ?</a>
+                </form>
+              </div>
+            </i>
+            <i class="fa-regular fa-heart"><sup>0</sup></i>
+            <i class="fa-brands fa-opencart"><sup>0</sup></i>
+          </div>
+
+
+        </div>
+        <div class="miniBottumNav d-flex d-lg-none">
+          <ul class="miniBottumNav-nav">
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#"> <i class="fa-regular fa-user"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <ul class="dropdown-menu">
+
+                <li>
+                  <form class="dropdown-item d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search...">
+                    <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  </form>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " aria-current="page" href="#"><i class="fa-brands fa-opencart"><sup>0</sup></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- header section end  -->
+
+  <!-- About Banner Section Start -->
+  <section class="AboutBanner">
+    <img src="image/AboutBanner.jpg" alt="AboutBanner">
+    <div class="container-fluid text-center">
+      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <ol class="breadcrumb justify-content-center">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">About Us </li>
+        </ol>
+      </nav>
+      <h1 class="secH">About Us</h1>
+    </div>
+  </section>
+  <!-- About Banner Section End -->
+
+  <!-- History Of art Arena section Start-->
+  <section class="HistoryOfArtArena defaultPadding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 text-part">
+          <h2 class="secH">History Of Art Arena</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ipsa similique ullam molestiae. Quisquam
+            mollitia sint nemo dignissimos blanditiis amet excepturi vero rerum esse aliquam recusandae, reiciendis
+            quibusdam fugit similique molestiae earum accusamus illum eum commodi.
+            <br><br>
+            Minima ratione accusamus eius maxime neque ea odit voluptatem quos optio dolorem hic cum, ex illum earum,
+            perspiciatis dolores eum, aliquid tempore fugiat consectetur.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="row">
+            <div class="col-4">
+              <img src="image/History1.png" alt="History1">
+            </div>
+            <div class="col-8 ">
+              <img src="image/History2.jpg" alt="History2">
+            </div>
+          </div>
+          <div class="row pt-4">
+            <div class="col-8 d-flex justify-content-end">
+              <img src="image/History3.jpg" alt="History3">
+            </div>
+            <div class="col-4 ">
+              <img src="image/History4.png" alt="History4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- History Of art Arena section End-->
+
+  <!-- suporting Companies section Start -->
+  <section class="suportingCompanies defaultPadding">
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-2 px-lg-5 px-md-2 ">
+          <a href="#"><img src="image/menufacture-1.jpg" alt="menufacture">
+          </a>
+        </div>
+        <div class="col-2 px-lg-5 px-md-2 ">
+          <a href="#"> <img src="image/menufacture-2.jpg" alt="menufacture"></a>
+        </div>
+        <div class="col-2 px-lg-5 px-md-2 ">
+          <a href="#"><img src="image/menufacture-3.jpg" alt="menufacture">
+          </a>
+        </div>
+        <div class="col-2 px-lg-5 px-md-2 ">
+          <a href="#"> <img src="image/menufacture-4.jpg" alt="menufacture"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- suporting Companies section End -->
+
+
+
+  <!-- video Section Start -->
+  <section class="videoSection">
+    <video width="100%" height="auto" controls="true" loop="true" muted="true">
+      <source src="image/5008854-hd_1280_720.mp4" type="video/mp4">
+      <source src="image/5008854-hd_1280_720.webm" type="video/webm">
+      <source src="image/5008854-hd_1280_720.ogg" type="video/ogg">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+  <!-- video Section End -->
+
+  <!-- Connect with a Beautiful Brand Start-->
+  <section class="ConnectWithBeautifulBrand defaultPadding">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-8 col-lg-5 col-10">
+          <h2 class="therdH">Connect with a Beautiful Brand</h2>
+          <p>We’ve gone to great lengths to bring you some fabulous Painting ranges to create your perfect Room
+            Decoration.</p>
+          <a class="MyOutlineBtn" href="#">Shop Now <i
+              class="fa-solid fa-arrow-right-long"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Connect with a Beautiful Brand End-->
+
+  <!-- Express Delivery Section Start -->
+  <section class="ExpressDelivery about_express">
+    <div class="container-fluid">
+      <div class="row ">
+        <div class="col-lg-3 col-md-6 text-center">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h2 class="therdH">Express Delivery</h2>
+          <p>Free shipping around the world for all orders over $120</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center">
+          <i class="fa-solid fa-shield"></i>
+          <h2 class="therdH">Safe Payment</h2>
+          <p>With our payment gateway, don’t worry about your information</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center">
+          <i class="fa-solid fa-box"></i>
+          <h2 class="therdH">Premium Packaging</h2>
+          <p>All pieces come carefully packed complete with packaging</p>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center">
+          <i class="fa-solid fa-id-card"></i>
+          <h2 class="therdH">Friendly Services</h2>
+          <p>You have 30-day return guarantee for every single ordervff</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Express Delivery Section End -->
+
+  <!-- Subscribe section start -->
+  <section class="Subscribe defaultPadding text-center">
+    <div class="container-fluid">
+      <span>NEWSLETTER</span>
+      <h2 class="secH">Subscribe to our Newsletter</h2>
+      <p>Subscribe to the free newsletter and receive notification of new products and promotions!</p>
+      <form action="#">
+        <div class="form-fields">
+          <input type="email" name="EMAIL" placeholder="Enter your e-mail..." required="">
+          <button class="fourthH" type="submit" value="Submit">
+            Subscribe
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- Subscribe section End -->
+
+  <!-- footer start -->
+  <footer class="defaultPadding">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-auto">
+          <a class="navbar-brand" href="index.html"><img src="image/ArtArena.svg" alt="logo"></a>
+        </div>
+        <div class="col">
+          <div class="footer-Links">
+            <a href="about.html">our story</a>
+            <a href="#">Sign Up</a>
+            <a href="#">Stores</a>
+            <a href="#">Customer care</a>
+            <a href="#">Careers</a>
+            <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+      <div class="row pt-3 copyright align-items-center">
+        <div class="col-md-5 d-flex flex-wrap align-items-center mb-3 mb-md-0">
+          <p class="m-0">© <a href="#"><strong>ArtArena</strong> </a>2019. All Rights Reserved.</p>
+        </div>
+        <div class="col-md-7">
+          <a class="socialFooter fa-brands fa-facebook-f"></a>
+          <a class="socialFooter fa-brands fa-twitter"></a>
+          <a class="socialFooter fa-brands fa-youtube"></a>
+          <a class="socialFooter fa-brands fa-instagram"></a>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

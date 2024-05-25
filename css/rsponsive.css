@@ -1,0 +1,182 @@
+
+
+@media only screen and (min-width: 1920px) {}
+
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {}
+
+@media only screen and (max-width: 1390px) {
+
+    .banner .carousel-indicators {
+        bottom: 0;
+        justify-content: center;
+        margin-bottom: 1rem;
+        margin-left: auto;
+        margin-right: auto;
+      }
+ 
+    .banner .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    width: 15px;
+    height:15px;
+    padding: 0;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    opacity: 0.5;
+    transition: opacity .6s ease;
+    border: 3px solid rgb(224, 224, 224, 0.8);
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgb(175, 144, 119, 0.8) 0%, rgb(221, 177, 148, 0.9) 100%);
+      }
+      .banner .carousel-indicators button span,   .banner .carousel-indicators button .fourthH{
+        display: none;
+      }
+      .banner .carousel-indicators button:hover{
+        border: 3px solid rgb(224, 224, 224, 0.8);
+        background-color: var(--LightBrown);
+        background-image: none;
+        opacity: 1;  
+      }
+      .banner .carousel-indicators button.active{
+        opacity: 1;
+        background-color: var(--LightBrown);
+        background-image: none;
+        border: 3px solid rgb(224, 224, 224, 0.8);
+      }
+
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1280px) {}
+
+
+@media screen and (max-width: 1180px) {
+
+/* ipad landscape view */
+footer .container-fluid{
+  padding: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+/* ipad portrait view */
+nav:not(nav[ aria-label="breadcrumb"]){
+    position: relative !important;
+    background-color: #ffffff !important;
+    z-index: 100;
+}
+.dropdown-menu {
+
+    box-shadow: none;
+}
+nav .shadow {
+    box-shadow: none !important;
+    padding-left: 10px;
+}
+.banner .textPart{
+    position: absolute;
+    background-color: #ffffff89;
+    z-index: 2;
+    padding: 20px;
+    padding-top: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 90%;
+}
+.banner img {
+    aspect-ratio: 9/16;
+    object-fit: cover;
+  }
+  .banner .textPart p {
+    color: var(--black);
+    margin-top: 20px;
+    font-size: 14px;
+  }
+.MyOutlineBtn {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .footer-Links a{
+    font-size: 12px;
+  }
+  .ConnectWithBeautifulBrand .row{
+    padding: 80px 0;
+  }
+  .navbar-nav .nav-item::before{
+    display: none;
+  }
+  .navbar-nav .nav-item::after{
+display: none;
+  }
+}
+
+@media screen and (max-width:  767.98px) {
+
+
+/* Mobile landscape view */
+.Subscribe .form-fields input{
+  width: 100%;
+}
+.Subscribe .form-fields button{
+  width: auto;
+}
+.Subscribe .form-fields{
+  width: 80%;
+}
+.footer-Links{
+  flex-direction: column;
+}
+footer .col{
+  width: 100%;
+ flex: unset;
+}
+.Subscribe.defaultPadding {
+  padding: 30px;
+}
+.copyright .col-md-7{
+  justify-content: start;
+}
+.ConnectWithBeautifulBrand .container-fluid,.ContactInformation .container-fluid,.DropALineSection .container-fluid,.PaddingContainer{
+  padding: 0 12px;
+}
+.ConnectWithBeautifulBrand .row{
+  padding: 80px 0;
+}
+.ConnectWithBeautifulBrand .col-md-8 {
+  padding: 20px;
+}
+.ProductList .col-lg-9 .ms-auto.col-auto{
+  margin-left: 0 !important;
+}
+}
+
+@media screen and (max-width:575.98px) {
+/* Mobile portrait view */
+.ExpressDelivery ,.HistoryOfArtArena .container-fluid {
+  padding: 30px ;
+}
+
+.ConnectWithBeautifulBrand .row{
+  background-size: 70% auto;
+}
+.defaultPadding {
+  padding: 70px 30px;
+}
+.AboutBanner .container-fluid {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.secH {
+  font-size: 24px;
+}
+.therdH{
+  font-size: 18px;
+}
+.TilesSection .circleWithPrice {
+  width: 150px;
+  height: 150px;
+  background: #ae8875b3;
+}
+}

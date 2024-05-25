@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image/FeviconLogo.svg">
+    <title>ArtGallery</title>
+    <script src="https://kit.fontawesome.com/52ca9e0df4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rsponsive.css">
+</head>
+
+<body>
+    <!-- header section start  -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="image/ArtArena.svg" alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Gallery
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Grid Gallery</a></li>
+                                <li><a class="dropdown-item" href="#">Masonry Gallery</a></li>
+                                <li><a class="dropdown-item" href="#">Full-Width Grid Gallery</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                What's On
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="productPage.html">Products</a></li>
+                                <li><a class="dropdown-item" href="FAQs.html">FAQs</a></li>
+                                <li><a class="dropdown-item" href="#">Exibitions</a></li>
+                                <li><a class="dropdown-item" href="#">Events & Programs</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside"
+                                href="#">
+                                About Us
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">History</a></li>
+                                <li class="dropend">
+                                    <a class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                                        data-bs-auto-close="outside" href="#">Artists</a>
+                                    <ul class="dropdown-menu shadow">
+                                        <li><a class="dropdown-item" href="#">Maria Zvonareva</a></li>
+                                        <li><a class="dropdown-item" href="#">Dinh Nguyen</a></li>
+                                        <li><a class="dropdown-item" href="#">Melinda Stoker</a></li>
+                                        <li><a class="dropdown-item" href="#">Wade Wilsone</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Meet Our Staff</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Journal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+
+
+                    <div class="serch_cart d-none d-lg-flex">
+
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                            data-bs-whatever="@mdo"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="d-flex" role="search">
+                                            <input class="form-control me-2" type="search" placeholder="Search"
+                                                aria-label="Search">
+                                            <button class="btn" type="submit"><i
+                                                    class="fa-solid fa-magnifying-glass"></i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="fa-regular fa-user">
+                            <div class="hoverLoginPage">
+                                <div class="innerheader fourthH">
+                                    <span>Sign In</span>
+                                    <a href="#">Create an Account</a>
+                                </div>
+                                <form class="row g-3 needs-validation" novalidate>
+                                    <div class="col-12">
+                                        <label for="validationCustomUsername" class="form-label">Username or
+                                            Email</label>
+                                        <div class="input-group has-validation">
+
+                                            <input type="email" class="form-control" id="validationCustomUsername"
+                                                aria-describedby="inputGroupPrepend" placeholder="Username" required>
+                                            <div class="invalid-feedback">
+                                                Please choose a username.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="validationCustomPassword" class="form-label">Password</label>
+                                        <div class="input-group has-validation">
+
+                                            <input type="password" class="form-control" id="validationCustomPassword"
+                                                aria-describedby="enterPassword" placeholder="Password" required>
+                                            <div class="invalid-feedback">
+                                                Enter correct Password.
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button class="btn text-uppercase" type="submit">Login</button>
+                                    </div>
+                                    <a class="lastLink" href="#">Lost Your Password ?</a>
+                                </form>
+                            </div>
+                        </i>
+                        <i class="fa-regular fa-heart"><sup>0</sup></i>
+                        <i class="fa-brands fa-opencart"><sup>0</sup></i>
+                    </div>
+
+
+                </div>
+                <div class="miniBottumNav d-flex d-lg-none">
+                    <ul class="miniBottumNav-nav">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#"> <i class="fa-regular fa-user"></i></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li>
+                                    <form class="dropdown-item d-flex" role="search">
+                                        <input class="form-control me-2" type="search" placeholder="Search"
+                                            aria-label="Search...">
+                                        <button class="btn" type="submit"><i
+                                                class="fa-solid fa-magnifying-glass"></i></button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#"><i
+                                    class="fa-brands fa-opencart"><sup>0</sup></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header section end  -->
+
+    <!-- Contact Banner Section Start -->
+    <section class="AboutBanner">
+        <img src="image/AboutBanner.jpg" alt="AboutBanner">
+        <div class="container-fluid text-center">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                </ol>
+            </nav>
+            <h1 class="secH">Contact Us</h1>
+        </div>
+    </section>
+    <!-- Contact Banner Section End -->
+
+    <!-- Contact Information Section Start -->
+    <section class="ContactInformation defaultPadding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <span>CONTACT</span>
+                    <h2 class="therdH text-uppercase">INFOMATION</h2>
+                </div>
+                <div class="col-lg-5 col-md-8 mt-4 mt-md-0">
+                    <div class="row">
+                        <div class="col-3 col-sm-2">
+                            <h2 class="fourthH">Add:</h2>
+                        </div>
+                        <div class="col-9 col-sm-10">
+                            <address>
+                                2593 Timbercrest Road, Chisana, Alaska Badalas United State
+                            </address>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-sm-2">
+                            <h2 class="fourthH">Phone:</h2>
+                        </div>
+                        <div class="col-9 col-sm-10">
+                            <a href="tel:+88 (6) 333 456">+88 (6) 333 456</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-3 col-sm-2">
+                            <h2 class="fourthH">Mail:</h2>
+                        </div>
+                        <div class="col-9 col-sm-10">
+                            <a href="mailto:ArtArena@gmail.com">ArtArena@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Information Section End -->
+
+
+    <!-- Drop A Line Section Start -->
+    <section class="DropALineSection defaultPadding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <span>CONTACT</span>
+                    <h2 class="therdH text-uppercase">DROP US A LINE</h2>
+                </div>
+                <div class="col-md-8 mt-4 mt-md-0">
+                    <form class="row g-3 needs-validation" novalidate>
+                       
+                        <div class="col-12">
+                          <label for="validationCustom02" class="form-label fourthH">Your Name (required)</label>
+                          <div class="input-group has-validation">
+                            
+                            <input type="text" class="form-control" id="validationCustom02" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                              Please Enter Your name.
+                            </div>
+                          </div>
+                          
+                        </div>
+                        <div class="col-12">
+                          <label for="validationCustomUsername" class="form-label fourthH">Your Email (required)</label>
+                          <div class="input-group has-validation">
+                            
+                            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                            <div class="invalid-feedback">
+                                Please Enter Your Email.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="validationNotRequired01" class="form-label fourthH">Subject</label>
+                            <input type="text"  id="validationNotRequired01" required>
+                          </div>
+                          <div class="col-12">
+                            <label for="validationNotRequired02" class="form-label fourthH">Your Message</label>
+                            <textarea name="validationNotRequired02" id="validationNotRequired02" cols="30" rows="10"></textarea>
+                          </div>
+                        <div class="col-12">
+                          <button class="MyOutlineBtn" type="submit">Submit form</button>
+                        </div>
+                      </form>
+                      <iframe class="mt-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.2182835536746!2d73.1802154742449!3d22.307582942633438!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fcf52dcc87095%3A0x2ac88691d8535726!2sWELTEC%20Institute%20-%20IT%20Training%20%26%20Placement%20Center!5e0!3m2!1sen!2sin!4v1712217424629!5m2!1sen!2sin" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Drop A Line Section End -->
+
+    <!-- Subscribe section start -->
+    <section class="Subscribe defaultPadding text-center">
+        <div class="container-fluid">
+            <span>NEWSLETTER</span>
+            <h2 class="secH">Subscribe to our Newsletter</h2>
+            <p>Subscribe to the free newsletter and receive notification of new products and promotions!</p>
+            <form action="#">
+                <div class="form-fields">
+                    <input type="email" name="EMAIL" placeholder="Enter your e-mail..." required="">
+                    <button class="fourthH" type="submit" value="Submit">
+                        Subscribe
+                        <i class="fa-solid fa-arrow-right-long"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- Subscribe section End -->
+
+
+    <!-- footer start -->
+    <footer class="defaultPadding">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-auto">
+                    <a class="navbar-brand" href="index.html"><img src="image/ArtArena.svg" alt="logo"></a>
+                </div>
+                <div class="col">
+                    <div class="footer-Links">
+                        <a href="about.html">our story</a>
+                        <a href="#">Sign Up</a>
+                        <a href="#">Stores</a>
+                        <a href="#">Customer care</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-3 copyright align-items-center">
+                <div class="col-md-5 d-flex flex-wrap align-items-center mb-3 mb-md-0">
+                    <p class="m-0">© <a href="#"><strong>ArtArena</strong> </a>2019. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-7">
+                    <a class="socialFooter fa-brands fa-facebook-f"></a>
+                    <a class="socialFooter fa-brands fa-twitter"></a>
+                    <a class="socialFooter fa-brands fa-youtube"></a>
+                    <a class="socialFooter fa-brands fa-instagram"></a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
