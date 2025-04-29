@@ -927,8 +927,8 @@ p {
   padding: 0 100px;
 }
 .ConnectWithBeautifulBrand .row {
-  background: url('../image/doubleDhamaka\ \(1\).jpg') no-repeat top left,
-    url('../image/doubleDhamaka\ \(2\).jpg') no-repeat bottom right;
+  background: url('../image/doubleDhamaka1.webp') no-repeat top left,
+    url('../image/doubleDhamaka2.webp') no-repeat bottom right;
   background-size: 55% auto;
   padding: 200px 0;
 }
@@ -1482,7 +1482,7 @@ footer .navbar-brand {
   gap: 24px;
 }
 .socialFooter {
-  display: flex;
+  display: flex !important;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;

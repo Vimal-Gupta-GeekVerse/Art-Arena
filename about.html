@@ -5,12 +5,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="image/FeviconLogo.svg">
-  <title>ArtGallery</title>
-  <script src="https://kit.fontawesome.com/52ca9e0df4.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/owl.carousel.css">
-  <link rel="stylesheet" href="css/style.css">
+  <title>About Us | ArtArena - Celebrating Art and Creativity</title>
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Discover the story behind ArtArena — a space where passion for fine art meets creativity. Learn about our journey, our artists, and our mission to bring inspiring art to every home.">
+  <meta name="keywords" content="about ArtArena, our story, art journey, meet the artists, art community, buy original art, passion for art, creative art store">
+  <meta name="author" content="ArtArena">
+
+  <link fetchpriority="high" rel="preload" href="image/ArtArena.svg" as="image" type="image/svg+xml" />
+  <link fetchpriority="high" rel="preload" href="image/AboutBanner.webp" as="image" type="image/png" />
+  
+  <!-- Preload -->
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/rsponsive.css">
+  <link rel="preconnect" href="https://kit.fontawesome.com" />
+  <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
+  <script src="https://kit.fontawesome.com/52ca9e0df4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,7 +30,7 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="image/ArtArena.svg" alt="logo"></a>
+        <a class="navbar-brand" href="index.html"><img  src="image/ArtArena.svg" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -181,7 +192,7 @@
 
   <!-- About Banner Section Start -->
   <section class="AboutBanner">
-    <img src="image/AboutBanner.jpg" alt="AboutBanner">
+    <img src="image/AboutBanner.webp" alt="AboutBanner">
     <div class="container-fluid text-center">
       <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
         <ol class="breadcrumb justify-content-center">
@@ -212,18 +223,18 @@
         <div class="col-lg-6">
           <div class="row">
             <div class="col-4">
-              <img src="image/History1.png" alt="History1">
+              <img loading="lazy" src="image/History2.webp" alt="History1">
             </div>
             <div class="col-8 ">
-              <img src="image/History2.jpg" alt="History2">
+              <img loading="lazy" src="image/History2.webp" alt="History2">
             </div>
           </div>
           <div class="row pt-4">
             <div class="col-8 d-flex justify-content-end">
-              <img src="image/History3.jpg" alt="History3">
+              <img loading="lazy" src="image/History3.webp" alt="History3">
             </div>
             <div class="col-4 ">
-              <img src="image/History4.png" alt="History4">
+              <img loading="lazy" src="image/History4.webp" alt="History4">
             </div>
           </div>
         </div>
@@ -237,18 +248,18 @@
     <div class="container-fluid">
       <div class="row justify-content-center">
         <div class="col-2 px-lg-5 px-md-2 ">
-          <a href="#"><img src="image/menufacture-1.jpg" alt="menufacture">
+          <a href="#"><img loading="lazy"  src="image/menufacture-1.jpg" alt="menufacture">
           </a>
         </div>
         <div class="col-2 px-lg-5 px-md-2 ">
-          <a href="#"> <img src="image/menufacture-2.jpg" alt="menufacture"></a>
+          <a href="#"> <img loading="lazy"  src="image/menufacture-2.jpg" alt="menufacture"></a>
         </div>
         <div class="col-2 px-lg-5 px-md-2 ">
-          <a href="#"><img src="image/menufacture-3.jpg" alt="menufacture">
+          <a href="#"><img loading="lazy"  src="image/menufacture-3.jpg" alt="menufacture">
           </a>
         </div>
         <div class="col-2 px-lg-5 px-md-2 ">
-          <a href="#"> <img src="image/menufacture-4.jpg" alt="menufacture"></a>
+          <a href="#"> <img loading="lazy"  src="image/menufacture-4.jpg" alt="menufacture"></a>
         </div>
       </div>
     </div>
@@ -342,7 +353,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-auto">
-          <a class="navbar-brand" href="index.html"><img src="image/ArtArena.svg" alt="logo"></a>
+          <a class="navbar-brand" href="index.html"><img loading="lazy" src="image/ArtArena.svg" alt="logo"></a>
         </div>
         <div class="col">
           <div class="footer-Links">
@@ -372,10 +383,8 @@
   <!-- footer end -->
 
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/jquery-3.7.1.js"></script>
-  <script src="js/owl.carousel.js"></script>
-  <script src="js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
